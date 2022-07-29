@@ -1,0 +1,224 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* RESET ABOVE  -  STYLE BELOW */
+
+/* -------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+.flexParent {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mainBG {
+    background-image: url('/css/assets/decks.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.whiteBackDrop {
+    background: rgb(19, 19, 19);
+    width: 250px;
+    height: 98%;
+    padding: 10px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid black;
+    border-radius: 500px;
+    box-shadow: 0 0 10px 0 black;
+    color: white;
+    font-family: 'chalk';
+    font-size: 16px;
+}
+
+.mainContent {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    transform: rotate(-16deg);
+    margin-top: 38px;
+}
+
+input {
+    /* padding: 50px 10px; */
+    width: 80%;
+    height: 24px;
+    text-align: center;
+}
+
+button {
+    padding: 3px 10px;
+    width: 80%;
+    height: 24px;
+}
+
+ul {
+    width: 80%;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.trickImage {
+    width: 90%;
+    height: 200px;
+    background: white;
+    margin: 40px 0 16px 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.gifBox {
+    width: 100%;
+}
+
+@font-face {
+    font-family: chalk;
+    src: url(/css/assets/Chalk-y\ Sans.otf);
+}
