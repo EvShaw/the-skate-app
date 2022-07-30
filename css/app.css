@@ -132,7 +132,8 @@ table {
 /* RESET ABOVE  -  STYLE BELOW */
 
 /* -------------------------- */
-* {
+html,
+body {
     box-sizing: border-box;
 }
 
@@ -150,11 +151,10 @@ table {
     background-size: cover;
 }
 
-.whiteBackDrop {
+.theBoard {
     background: rgb(19, 19, 19);
     width: 250px;
     height: 98%;
-    padding: 10px;
     margin: auto;
     position: absolute;
     top: 50%;
@@ -163,43 +163,54 @@ table {
     border: 2px solid black;
     border-radius: 500px;
     box-shadow: 0 0 10px 0 black;
+
+    text-align: center;
     color: white;
     font-family: 'chalk';
     font-size: 16px;
 }
 
-.mainContent {
-    margin-top: 100px;
+.appTitle {
+    margin-top: 170px;
+    display: flex;
+    width: 100%;
 }
 
-h1 {
+.appTitle h1 {
+    width: 250px;
+    height: 45px;
+    line-height: 45px;
+    background: #be9941;
+    color: black;
     font-size: 36px;
-    margin-bottom: 40px;
-    transform: rotate(-16deg);
-    margin-top: 38px;
+}
+
+.mainContent {
+    margin-top: 30px;
 }
 
 input {
-    /* padding: 50px 10px; */
-    width: 80%;
+    width: 90%;
+    padding: 3px 10px;
     height: 24px;
     text-align: center;
 }
 
 button {
-    padding: 3px 10px;
     width: 80%;
+    padding: 3px 10px;
     height: 24px;
+    text-align: center;
 }
 
 ul {
-    width: 80%;
-    border: 1px solid red;
+    width: 90%;
     margin: 0 auto;
+    text-align: left;
 }
 
 ul li {
-    margin: 5px 0;
+    margin: 15px 0;
 }
 
 .trickImage {
@@ -209,9 +220,10 @@ ul li {
     margin: 40px 0 16px 0;
 }
 
-h2 {
-    font-size: 24px;
+.trickName {
+    font-size: 48px;
     margin-bottom: 10px;
+    margin-top: 36px;
 }
 
 .gifBox {
@@ -221,4 +233,10 @@ h2 {
 @font-face {
     font-family: chalk;
     src: url(/css/assets/Chalk-y\ Sans.otf);
+}
+
+@media all and (min-width: 1200px) {
+    .mainBG {
+        background-size: 50%;
+    }
 }

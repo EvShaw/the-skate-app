@@ -17,8 +17,10 @@ async function apiRequest() {
 
 const trickName = document.querySelector('#trickNameDisplay')
 const trickImage = document.querySelector('#trickImageDisplay')
+const skillLevel = document.querySelector('#skillLevelDisplay')
 
 function changeContent(data) {
     trickName.innerText = data.name
+    skillLevel.innerText = data.skillLevel
     trickImage.src = ""
 }
