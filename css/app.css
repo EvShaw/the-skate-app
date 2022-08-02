@@ -226,6 +226,26 @@ ul li {
     margin-top: 36px;
 }
 
+.skillLevel {
+    font-size: 16px;
+}
+
+.inventor {
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.yearCreated {
+    font-size: 36px;
+}
+
+.description {
+
+    width: 80%;
+    margin: 40px auto 0 auto;
+    font-size: 18px;
+}
+
 .gifBox {
     width: 100%;
 }
