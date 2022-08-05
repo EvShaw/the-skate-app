@@ -131,132 +131,171 @@ table {
 
 /* RESET ABOVE  -  STYLE BELOW */
 
-/* -------------------------- */
+
+/* ------------  GLOBALS  -------------- */
 html,
 body {
+    box-sizing: border-box;
+    font-family: chalk;
+}
+
+* {
     box-sizing: border-box;
 }
 
 .flexParent {
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.mainBG {
-    background-image: url('/css/assets/decks.jpg');
-    background-position: 50% 50%;
-    background-size: cover;
+
+/* ------------  NAV  -------------- */
+nav {
+    position: fixed;
+    top: 0;
 }
 
-.theBoard {
-    background: rgb(19, 19, 19);
-    width: 250px;
-    height: 98%;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid black;
-    border-radius: 500px;
-    box-shadow: 0 0 10px 0 black;
-
-    text-align: center;
-    color: white;
-    font-family: 'chalk';
-    font-size: 16px;
-}
-
-.appTitle {
-    margin-top: 170px;
-    display: flex;
+nav,
+footer {
+    height: 120px;
     width: 100%;
+}
+
+body {
+    min-height: 100vh;
 }
 
 .appTitle h1 {
-    width: 250px;
-    height: 45px;
-    line-height: 45px;
-    background: #be9941;
-    color: black;
-    font-size: 36px;
+    color: white;
+    font-size: 48px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* ------------  Main -------------- */
+.fullContainer {
+    width: 100%;
+    height: 100px;
+    background: gray;
 }
 
 .mainContent {
-    margin-top: 30px;
+    width: 320px;
+    height: 500px;
+    box-shadow: 0 0 5px 0px black;
+    align-content: flex-start;
+    padding-top: 10px;
+    background: rgba(255, 255, 255, 0.945);
 }
 
-input {
-    width: 90%;
-    padding: 3px 10px;
-    height: 24px;
-    text-align: center;
-}
-
-button {
+.displayContainer {
+    margin-top: 10px;
     width: 80%;
-    padding: 3px 10px;
-    height: 24px;
-    text-align: center;
+    height: 73%;
+    align-content: flex-start;
+    padding: 2px;
 }
 
-ul {
-    width: 90%;
-    margin: 0 auto;
-    text-align: left;
-}
+/* ------------  Trick Displayed Info -------------- */
 
-ul li {
-    margin: 15px 0;
-}
-
-.trickImage {
-    width: 90%;
-    height: 200px;
-    background: white;
-    margin: 40px 0 16px 0;
-}
-
-.trickName {
-    font-size: 48px;
-    margin-bottom: 10px;
-    margin-top: 36px;
-}
-
-.skillLevel {
-    font-size: 16px;
-}
-
+.trickName,
 .inventor {
-    margin-top: 40px;
-    font-size: 24px;
-}
-
-.yearCreated {
+    width: 100%;
+    text-align: center;
     font-size: 36px;
+    margin: 10px 0;
 }
 
-.description {
-
-    width: 80%;
-    margin: 40px auto 0 auto;
+.skillLevel,
+.yearCreated {
+    width: 100%;
+    text-align: center;
     font-size: 18px;
 }
 
-.gifBox {
-    width: 100%;
+.yearCreated {
+    margin-bottom: 10px;
 }
 
+.description {
+    text-align: center;
+    padding: 2px;
+}
+
+
+/* ------------  FOOTER -------------- */
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+
+}
+
+/* ------------  INPUT -------------- */
+input {
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+/* ------------  BUTTONS -------------- */
+.btnStyle {
+    background: black;
+    color: white;
+    display: inline-block;
+    width: 40%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.btnStyle:first-of-type {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.btnStyle:last-of-type {
+
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.btnStyle:hover {
+    filter: opacity(.75);
+}
+
+.btnStyle:active {
+    filter: opacity(.75);
+}
+
+/* Backgrounds */
+.gripTapeBG {
+    background-image: url('https://funboxskate.com/wp-content/uploads/2016/10/standardgritgriptape.jpg');
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+.multiDeckBG {
+    background-image: url('/css/assets/decks.jpg');
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+/* FONTS */
 @font-face {
     font-family: chalk;
     src: url(/css/assets/Chalk-y\ Sans.otf);
-}
-
-@media all and (min-width: 1200px) {
-    .mainBG {
-        background-size: 50%;
-    }
 }

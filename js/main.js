@@ -1,4 +1,8 @@
-document.querySelector('button').addEventListener('click', apiRequest)
+const getTrick = document.querySelector('#getTrick')
+const randomTrick = document.querySelector('#randomTrick')
+
+
+document.querySelector('#getTrick').addEventListener('click', apiRequest)
 
 async function apiRequest() {
     const trickName = document.querySelector('input').value.replaceAll(' ','').replaceAll('-','').replaceAll("'", "").toLowerCase()
@@ -16,6 +20,7 @@ async function apiRequest() {
 }
 
 const trickName = document.querySelector('#trickNameDisplay')
+
 const trickImage = document.querySelector('#trickImageDisplay')
 const skillLevel = document.querySelector('#skillLevelDisplay')
 const inventor = document.querySelector('#inventorDisplay')
@@ -23,6 +28,7 @@ const yearCreated = document.querySelector('#yearCreated')
 const description = document.querySelector('#descriptionDisplay')
 
 function changeContent(data) {
+    document.querySelector('input').value = ''
     trickName.innerText = data.name
     skillLevel.innerText = data.skillLevel
     inventor.textContent = data.inventor

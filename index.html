@@ -9,17 +9,32 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 
-<body class="mainBG flexParent">
+<body class="flexParent multiDeckBG">
 
-    <section class="theBoard">
-        <section class="appTitle">
+    <nav class="gripTapeBG flexParent">
+        <section class="appTitle flexParent">
             <h1>The Skate App</h1>
         </section>
-        
+    </nav>
+
+    <main class="theBoard flexParent">
+
+
         <section class="mainContent flexParent">
-           
+
             <input type="text" placeholder="Trick Name" name="trickName" id="trickName">
-            <button>Click to Get Info</button>
+            <!-- <button>Click to Get Info</button> -->
+            <h3 class="btnStyle gripTapeBG" id="randomTrick">Random Trick</h3>
+            <h3 class="btnStyle gripTapeBG" id="getTrick">Get Trick</h3>
+
+
+            <section class="displayContainer flexParent">
+                <h2 class="trickName" id="trickNameDisplay"></h2>
+                <h2 class="skillLevel" id="skillLevelDisplay"></h2>
+                <h2 class="inventor" id="inventorDisplay"></h2>
+                <h2 class="yearCreated" id="yearCreated"></h2>
+                <h2 class="description" id="descriptionDisplay"></h2>
+            </section>
 
             <!-- <section class="trickImage">
 
@@ -27,28 +42,13 @@
                  <p class="caption" id="trickCaption">Photo</p> -->
         </section>
 
-        <h2 class="trickName" id="trickNameDisplay"></h2>
-        <h2 class="skillLevel" id="skillLevelDisplay"></h2>
-        <h2 class="inventor" id="inventorDisplay"></h2>
-        <h2 class="yearCreated" id="yearCreated"></h2>
-        <h2 class="description" id="descriptionDisplay"></h2>
 
-        <ul>
-            <!-- <li><span>Trick Name:</span><span></span></li> -->
-            <!-- <li><span>Skill Level:</span><span></span></li> -->
-            <!-- <li><span>Inventor:</span><span></span></li> -->
-            <!-- <li><span>Year Created:</span><span></span></li> -->
-            <!-- <li><span>Description:</span><span></span></li> -->
-            <!-- <li><span>Image:</span><span></span></li> -->
-            <!-- <li><span>Side Note:</span><span></span></li> -->
-            <!-- <li><span>Wiki Link:</span><span></span></li> -->
-        </ul>
+        </section>
+    </main>
 
-    </section>
-
-    </section>
-
-
+    <footer class="gripTapeBG flexParent">
+        <h2><a href="https://theevanproject.netlify.app/">The Evan Project</a></h2>
+    </footer>
     <script src="/js/main.js"></script>
 </body>
 
